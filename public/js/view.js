@@ -8,7 +8,7 @@ $(".devour").on("click", function (event) {
         id:id,
         burger: eaten
     };
-    console.log("uadaua "+eatenState);
+    // console.log("uadaua "+eatenState);
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
         type: "PUT",
