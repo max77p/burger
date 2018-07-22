@@ -1,0 +1,30 @@
+.container{
+    border:1px solid green;
+}
+
+.burgerImg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.imgContainer {
+    border: 1px solid blue;
+    margin: 0 auto;
+    width: 20em;
+    height: 100%;
+}
+
+.imgContainer h1{
+    text-align:center;
+}
+
+#createBurger{
+    padding:1em;
+}
+
+.inputForm textarea, button{
+    border:1px solid red;
+    display:block;
+    margin:0 auto;
+}
