@@ -8,7 +8,7 @@ $(".devour").on("click", function (event) {
         id:id,
         burger: eaten
     };
-    console.log(eatenState);
+    console.log("uadaua "+eatenState);
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
         type: "PUT",
@@ -25,11 +25,10 @@ $(".devour").on("click", function (event) {
 $("#createBurger").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-
+if($("#submitArea").val().trim()){
     var newBurger = {
         burger: $("#submitArea").val().trim()
     };
-    console.log(newBurger);
     // Send the POST request.
     $.ajax("/api/burgers", {
         type: "POST",
@@ -41,6 +40,14 @@ $("#createBurger").on("submit", function (event) {
             location.reload();
         }
     );
+    console.log(newBurger);
+}
+else{
+    alert("Please enter a name");
+}
+    
+    
+    
 });
 
 //   $("#updateplan").on("submit", function(event) {

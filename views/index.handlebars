@@ -9,11 +9,23 @@
       {{!-- <h2>test</h2> --}}
 
       {{#each burgers}}
-        <h3 class="burgerlist">{{this.id}}. {{this.burger_name}}</h3> <button class="devour" data-id="{{this.id}}" data-eaten="{{this.devoured}}">Devour it!</button>
+        {{#unless this.devoured}}
+          <div class="burgerlist">
+            <p>{{this.id}}. {{this.burger_name}}</p>
+            <button class="devour" data-id="{{this.id}}" data-eaten="{{this.devoured}}">Devour it!</button>
+          </div>
+        {{/unless}}
       {{/each}}
     </div>
     <div class="col-md-6 inactiveCol">
-      <h2>test1</h2>
+      {{!-- <h2>test1</h2> --}}
+      {{#each burgers}}
+        {{#if this.devoured}}
+          <div class="eaten-burger-list">
+            <p>{{this.id}}. {{this.burger_name}}</p>
+          </div>
+        {{/if}}
+      {{/each}}
     </div>
   </div>
 </div>

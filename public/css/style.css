@@ -1,5 +1,13 @@
-.wrapper{
-    border:1px solid green;
+body{
+    background-image:url("https://i.pinimg.com/564x/ef/9c/47/ef9c471079c34d83d35c5efb97e39da0.jpg");
+    background-repeat: cover;
+    background-position: center;
+    color:black !important;
+    font-size:1.4em !important;
+}
+
+.wrapper {
+    /* border: 1px solid green; */
 }
 
 .burgerImg {
@@ -15,34 +23,71 @@
     height: 100%;
 }
 
-.imgContainer h1{
-    text-align:center;
+.imgContainer h1 {
+    text-align: center;
 }
 
-#createBurger{
-    padding:1em;
+#createBurger {
+    padding: 1em;
     /* border:1px solid green; */
     /* display:block; */
-    width:30em;
-    margin:0 auto;
+    width: 30em;
+    margin: 0 auto;
 }
 
-.activeCol,.inactiveCol{
-    width:50%;
-    height:100%;
-    border:1px solid blue;
+.activeCol,
+.inactiveCol {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid blue; */
 }
 
-.eating-section{
-     border:1px solid gold;
+.eating-section {
+    /* border: 1px solid gold; */
 }
-#createBurger  .form-group{
-    border:1px solid red;
+
+#createBurger .form-group {
+    /* border: 1px solid red; */
     /* display:block; */
-    margin:0 auto;
-    text-align:center;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.burgerlist{
-    border:1px solid blue;
+.burgerlist {
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 50%;
+    margin: .2em auto;
+    margin-right: 0;
+    padding:.5em;
+    background-color: #c7c7c7e6;
+
+}
+
+.burgerlist p{
+    margin:0;
+}
+
+.eaten-burger-list {
+    width: 50%;
+    margin-left: 0;
+
+}
+
+.burgerlist p,
+.devour {
+    display: inline-block;
+}
+
+.eaten-burger-list p {
+    display: inline-block;
+
+    width: 100%;
+
+   background-color: #c7c7c7e6;
+}
+
+
+.burgerlist .devour {
+    float: right;
 }
