@@ -34,6 +34,8 @@ function printQuestionMarks(num) {
     return arr.toString();
   }
 
+  //helper function to create set
+
   var orm = {
     all: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
@@ -68,7 +70,8 @@ function printQuestionMarks(num) {
     // // An example of objColVals would be {name: panther, sleepy: true}
     updateOne: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
-  
+  console.log("testing",objColVals);
+  console.log("testing",condition);
       queryString += " SET ";
       queryString += objToSql(objColVals);
       queryString += " WHERE ";

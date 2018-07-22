@@ -1,4 +1,4 @@
-.container{
+.wrapper{
     border:1px solid green;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .imgContainer {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 0 auto;
     width: 20em;
     height: 100%;
@@ -21,10 +21,28 @@
 
 #createBurger{
     padding:1em;
+    /* border:1px solid green; */
+    /* display:block; */
+    width:30em;
+    margin:0 auto;
 }
 
-.inputForm textarea, button{
+.activeCol,.inactiveCol{
+    width:50%;
+    height:100%;
+    border:1px solid blue;
+}
+
+.eating-section{
+     border:1px solid gold;
+}
+#createBurger  .form-group{
     border:1px solid red;
-    display:block;
+    /* display:block; */
     margin:0 auto;
+    text-align:center;
+}
+
+.burgerlist{
+    border:1px solid blue;
 }
