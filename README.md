@@ -5,10 +5,13 @@ The goal of this simple app is to showcase the ability to put the front end and 
 
 This app uses Node, Express, mySQL, Body-Parser, and Express-Handlebars
 
-## Technologies used
-- [x] Nodejs
-- [x] Express
-- [x] mySQL
-- [x] Body-Parser
-- [x] Express-Handlebars
+## Features
+- custom ORM to communicate with SQL database
+- HTML created dynamically using handlebars
+- Hosted on Heroku
+
+### Install project dependencies
+- Install dependencies using `npm install`
+
+
 
